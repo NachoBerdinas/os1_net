@@ -1,0 +1,7 @@
+build
+cmake-build-debug
+CMakeFiles
+lib
+.idea/vcs.xml
+.idea/misc.xml
+.idea/os1.iml
