@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nacho/workspace/os1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd22c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd22c.dir/build.make CMakeFiles/cmTC_dd22c.dir/build
+make[1]: Entering directory '/home/nacho/workspace/os1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd22c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_dd22c.dir/CheckSymbolExists.c.o   -c /home/nacho/workspace/os1/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dd22c
+/home/nacho/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd22c.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_dd22c.dir/CheckSymbolExists.c.o  -o cmTC_dd22c 
+CMakeFiles/cmTC_dd22c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dd22c.dir/build.make:97: recipe for target 'cmTC_dd22c' failed
+make[1]: *** [cmTC_dd22c] Error 1
+make[1]: Leaving directory '/home/nacho/workspace/os1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dd22c/fast' failed
+make: *** [cmTC_dd22c/fast] Error 2
+
+File /home/nacho/workspace/os1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/nacho/workspace/os1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e36e6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e36e6.dir/build.make CMakeFiles/cmTC_e36e6.dir/build
+make[1]: Entering directory '/home/nacho/workspace/os1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e36e6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e36e6.dir/CheckFunctionExists.c.o   -c /home/nacho/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e36e6
+/home/nacho/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e36e6.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e36e6.dir/CheckFunctionExists.c.o  -o cmTC_e36e6 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e36e6.dir/build.make:97: recipe for target 'cmTC_e36e6' failed
+make[1]: *** [cmTC_e36e6] Error 1
+make[1]: Leaving directory '/home/nacho/workspace/os1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e36e6/fast' failed
+make: *** [cmTC_e36e6/fast] Error 2
+
+

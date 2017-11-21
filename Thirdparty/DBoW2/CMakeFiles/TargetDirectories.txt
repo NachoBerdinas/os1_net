@@ -1,0 +1,3 @@
+/home/nacho/workspace/os1/Thirdparty/DBoW2/CMakeFiles/rebuild_cache.dir
+/home/nacho/workspace/os1/Thirdparty/DBoW2/CMakeFiles/edit_cache.dir
+/home/nacho/workspace/os1/Thirdparty/DBoW2/CMakeFiles/DBoW2.dir

@@ -1,0 +1,4 @@
+/home/nacho/workspace/os1/CMakeFiles/rebuild_cache.dir
+/home/nacho/workspace/os1/CMakeFiles/edit_cache.dir
+/home/nacho/workspace/os1/CMakeFiles/os1_run.dir
+/home/nacho/workspace/os1/CMakeFiles/ORB_SLAM2.dir

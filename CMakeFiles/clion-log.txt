@@ -1,0 +1,6 @@
+/home/nacho/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nacho/workspace/os1
+Build type: Debug
+-- Using flag -std=c++11.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nacho/workspace/os1
